@@ -1,0 +1,139 @@
+.animes {
+  padding: 60px 100px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 40px auto;
+}
+
+.animes h2 {
+  font-size: 60px;
+  color: var(--light-color2);
+  margin: 10px 0;
+}
+
+.animes ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.animes ul li {
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  color: var(--white-color);
+}
+.animes ul li.active {
+  background: var(--frist-color);
+  color: var(--light-color2);
+  box-shadow: 0 0 10px var(--frist-color);
+}
+
+.animes .cardBx {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.animes .cardBx .card {
+  width: 280px;
+  border-radius: 10px;
+  margin: 20px 40px;
+  background: var(--light-color1);
+  overflow: hidden;
+}
+
+.animes .cardBx .card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.animes .cardBx .card .content {
+  padding: 10px;
+}
+
+.animes .cardBx .card .content h4 {
+  color: var(--white-color);
+  margin: 15px 0;
+}
+
+.animes .cardBx .card .progress-line {
+  position: relative;
+  height: 10px;
+  width: 100%;
+  background: var(--frist-color);
+  margin-bottom: 15px;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.animes .cardBx .card .progress-line span {
+  position: absolute;
+  height: 100%;
+  width: 80%;
+  border-radius: 10px;
+  background: var(--light-color2);
+  box-shadow: 0 0 10px var(--light-color2);
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.animes .cardBx .card .info {
+  border-top: 2px solid var(--frist-color);
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.animes .cardBx .card .info p {
+  font-size: 1em;
+  font-weight: 700;
+  color: var(--white-color);
+}
+
+.animes .cardBx .card .info span {
+  color: var(--frist-color);
+}
+
+.animes .cardBx .card .info a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 20px 0;
+  font-weight: 700;
+  border-radius: 5px;
+  color: var(--white-color);
+  background-color: var(--frist-color);
+  letter-spacing: 1px;
+}
+
+.animes .cardBx .card .info a:hover {
+  background: var(--light-color2);
+  transition: 0.3s;
+  box-shadow: 0 0 10px var(--light-color2);
+}
+
+.animes .cardBx .card.hide {
+  display: none;
+}

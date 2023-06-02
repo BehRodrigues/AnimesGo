@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- links -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Project AnimesGo</title>
+</head>
+
+<body>
+
+  <header>
+    <a href="#" class="logo">AnimesGo</a>
+    <ul class="nav">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#animes">Animes</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="action">
+      <div class="searchBx">
+        <a href="#"><i class="bx bx-search"></i></a>
+        <input type="text" placeholder="Search Games">
+      </div>
+    </div>
+    <div class="toggleMenu" onclick="toggleMenu();"></div>
+  </header>
+
+  <!-- Home Banner -->
+  <main>
+    <section id="home">
+      <div class="banner">
+        <div class="bg">
+          <div class="content">
+            <h2>A New Home for Anime Lovers</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#" class="btn">Join Now</a>
+          </div>
+          <img src="./img/jujutsu-kaisen.jpg" alt="jujutsu-kaisen">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- About section -->
+  <section id="about">
+    <div class="about animeX">
+      <div class="contentBx">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto amet sed commodi dignissimos iure reiciendis nobis temporibus error praesentium, est a nesciunt quas libero ducimus velit eos ab optio rem!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quasi, non accusamus ipsum autem cumque alias vitae culpa minima maiores, nisi blanditiis officia doloremque odit ut rerum quidem a suscipit!
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum est sunt dolores fuga quasi ut placeat eligendi. Quas unde sed consectetur, iusto minus perferendis? Doloribus perferendis nulla atque delectus rem.
+        </p>
+        <a href="#">Read More</a>
+      </div>
+      <img src="/img/kimetsu.png" alt="Kimetsu no Yaiba">
+    </div>
+  </section>
+
+
+
+  <!-- Animes section -->
+  <section id="animes">
+    <div class="animes animeX">
+      <h2>Popular Animes</h2>
+      <ul>
+        <li class="list active" data-filter="all">All</li>
+        <li class="list" data-filter="complete">Complete</li>
+        <li class="list" data-filter="releases">Releases</li>
+      </ul>
+      <div class="cardBx">
+        <div class="card" data-item="complete">
+          <img src="/img/card-1" alt="naruto-card">
+          <div class="content">
+            <h4>Naruto Shippuden</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <p>Legendado<br>
+                <span>A14</span>
+              </p>
+              <a href="#">Watch Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-item="complete">
+          <img src="/img/card-2.jpg" alt="naruto-card">
+          <div class="content">
+            <h4>Hunter X Hunter</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <p>Legendado<br>
+                <span>A14</span>
+              </p>
+              <a href="#">Watch Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-item="releases">
+          <img src="/img/card-3.jpe" alt="naruto-card">
+          <div class="content">
+            <h4>Kimetsu no Yaiba</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <p>Leg | Dub<br>
+                <span>A16</span>
+              </p>
+              <a href="#">Watch Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-item="releases">
+          <img src="/img/card-4.jpg" alt=" naruto-card">
+          <div class="content">
+            <h4>Jujutsu Kaisen</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <p>Leg | Dub<br>
+                <span>A16</span>
+              </p>
+              <a href="#">Watch Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-item="releases">
+          <img src="/img/card-5.jpg" alt="naruto-card">
+          <div class="content">
+            <h4>One Piece</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <p>Legendado<br>
+                <span>A14</span>
+              </p>
+              <a href="#">Watch Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-item="releases">
+          <img src="/img/card-6.jpe" alt="naruto-card">
+          <div class="content">
+            <h4>Boku no Hero Academia</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <p>Legendado<br>
+                <span>A12</span>
+              </p>
+              <a href="#">Watch Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-item="complete">
+          <img src="/img/card-7.jpeg" alt="naruto-card">
+          <div class="content">
+            <h4>Berserk</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <p>Legendado<br>
+                <span>18+</span>
+              </p>
+              <a href="#">Watch Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-item="complete">
+          <img src="/img/card-8.jpeg" alt="naruto-card">
+          <div class="content">
+            <h4>Shingeki no Kyojin</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <p>Legendado<br>
+                <span>A16</span>
+              </p>
+              <a href="#">Watch Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-item="releases">
+          <img src="/img/card-9.jpe" alt="naruto-card">
+          <div class="content">
+            <h4>Chainsaw Man</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <p>Leg | Dub<br>
+                <span>18+</span>
+              </p>
+              <a href="#">Watch Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="news">
+    <div class="news animeX">
+      <h2>News</h2>
+      <div class="boxBx">
+        <div class="box">
+          <img src="./img/news/news-9.jpg" alt="news-9">
+          <div class="content">
+            <h4>Koichi Yamadera joins the voice cast as Zohakuten</h4>
+            <p>As the Demon Slayer: Swordsmith Village Arc anime continues to adapt Koyoharu Gotouge's hit manga every week, new promotional art and a new addition to the voice cast have been revealed.</p>
+            <div class="btn">
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="./img/news/news-8.jpg" alt="news-8">
+          <div class="content">
+            <h4>Super Mario Bros - The Movie becomes 3rd highest-grossing animated film of all time!</h4>
+            <p>Mario and his friends became superstars and the movie Super Mario Bros - The Movie is already in the top 3 grossing animated films of all time with 1.22 billion dollars worldwide, dethroning The Incredibles 2 and being second only to the two films from Frozen.</p>
+            <div class="btn">
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="./img/news/news-7.jpg" alt="news-7">
+          <div class="content">
+            <h4>Konami announces Metal Gear Solid 3 remake and new collection of the franchise</h4>
+            <p>The collection is billed as "Volume 1" and will feature all releases in the main series up to Metal Gear Solid 3: Snake Eater.</p>
+            <div class="btn">
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="./img/news/news-6.jpg" alt="news-6">
+          <div class="content">
+            <h4>Record of Ragnarok anime season 2 returns July 12 with its second part</h4>
+            <p>The second part of the 2nd season of the Record of Ragnarok anime will premiere on July 12, with its international broadcast confirmed by Netflix, and with the announcement came new artwork and additions to the anime's voice cast!</p>
+            <div class="btn">
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="./img/news/news-5.png" alt="news-5">
+          <div class="content">
+            <h4>Anime Awards Brasil 2023 will be co-organized by the Japan Foundation</h4>
+            <p>A Embaixada do Japão no Brasil e o Kenren também dão apoio institucional ao evento, que será transmitido diretamente da Japan House São Paulo.</p>
+            <div class="btn">
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="./img/news/news-4.png" alt="news-4">
+          <div class="content">
+            <h4>My Love Story with Yamada-kun Level 999 reveal teaser for episode 9</h4>
+            <p>A new promotional video for episode 9 of the anime My Love Story with Yamada-kun Level 999, based on Mashiro's romantic comedy manga, was revealed today.</p>
+            <div class="btn">
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact section -->
+  <section id="contact">
+    <div class="contact animeX">
+      <img src="./img/contact.jpg" alt="goku">
+      <div class="form">
+        <h1>Contact Us</h1>
+        <div class="inputBx">
+          <p>Enter Name</p>
+          <input type="text" placeholder="Full Name">
+        </div>
+        <div class="inputBx">
+          <p>Enter Email</p>
+          <input type="text" placeholder="Full Name">
+        </div>
+        <div class="inputBx">
+          <p>Message</p>
+          <textarea placeholder="Type here..."></textarea>
+        </div>
+        <div class="inputBx">
+          <input type="submit" name="Submit">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footeeeer section -->
+  <footer>
+    <div class="info">
+      <a href="#" class="logo">AnimesGo</a>
+      <p><i class='bx bx-copyright'></i>2023 All Rights Reserved</p>
+      <ul>
+        <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+        <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+        <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+        <li><a href="#"><i class='bx bxl-youtube'></i></a></li>
+      </ul>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+
+    // Sticky NavBar
+    window.addEventListener('scroll', function () {
+      var header = document.querySelector('header');
+      header.classList.toggle('sticky', window.scrollY > 0);
+    });
+
+    //Responive Navbar
+    function toggleMenu() {
+      const toggleMenu = document.querySelector('.toggleMenu');
+      const nav = document.querySelector('.nav');
+      toggleMenu.classList.toggle('active')
+      nav.classList.toggle('active')
+    }
+
+    //Scrolling Animation Effects
+    window.addEventListener('scroll', function () {
+      var anime = document.querySelectorAll('.animeX');
+
+      for (var s = 0; s < anime.length; s++) {
+        var windowheight = window.innerHeight;
+        var animetop = anime[s].getBoundingClientRect().top;
+        var animepoint = 150;
+
+        if (animetop < windowheight - animepoint) {
+          anime[s].classList.add('active');
+        }
+        else {
+          anime[s].classList.remove('active');
+        }
+      }
+    })
+
+
+
+    //Filterable Cards
+    let list = document.querySelectorAll('.list');
+    let card = document.querySelectorAll('.card');
+
+    for (let i = 0; i < list.length; i++) {
+      list[i].addEventListener('click', function () {
+        for (let j = 0; j < list.length; j++) {
+          list[j].classList.remove('active');
+        }
+        this.classList.add('active');
+        let dataFilter = this.getAttribute('data-filter');
+
+        for (let k = 0; k < card.length; k++) {
+          card[k].classList.remove('active');
+          card[k].classList.add('hide');
+
+          if (card[k].getAttribute('data-item') == dataFilter || dataFilter == 'all')
+            card[k].classList.remove('hide');
+          card[k].classList.add('active');
+        }
+      })
+    }
+
+
+
+
+  </script>
+</body>
+
+</html>

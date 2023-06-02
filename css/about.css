@@ -1,0 +1,46 @@
+.about {
+  position: relative;
+  width: 100%;
+  min-height: 75vh;
+  padding: 100px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about .contentBx {
+  width: 50%;
+  margin: 20px;
+}
+
+.about .contentBx h2 {
+  font-size: 3em;
+  font-weight: 700;
+  color: var(--light-color2);
+}
+
+.about .contentBx p {
+  padding-top: 20px;
+  max-width: 600px;
+  text-align: justify;
+  color: var(--white-color);
+  font-weight: 100;
+}
+
+.about .contentBx a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 20px 0;
+  font-weight: 700;
+  border-radius: 5px;
+  color: var(--white-color);
+  background-color: var(--frist-color);
+  letter-spacing: 1px;
+}
+
+.about .contentBx a:hover {
+  background-color: var(--light-color2);
+  box-shadow: 0 0 10px var(--light-color2);
+  color: var(--bg-color);
+  transition: 0.3s ease-in;
+}

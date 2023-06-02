@@ -1,0 +1,77 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 7px 100px;
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  transition: 0.5s;
+  z-index: 1000;
+}
+
+header.sticky {
+  background-color: var(--light-color1);
+  box-shadow: 0 5px 20px rgba(34, 34, 34, 0.9);
+}
+
+header .logo {
+  position: relative;
+  color: var(--white-color);
+  font-size: 3em;
+  font-weight: 700;
+}
+
+header .logo:hover {
+  color: var(--frist-color);
+  transition: 0.4s ease;
+}
+
+header .nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+
+header ul li {
+  margin: 10px;
+}
+
+header ul li a {
+  color: var(--white-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+header ul li a:hover {
+  background-color: var(--light-color2);
+  box-shadow: 0 0 10px var(--light-color2);
+  color: var(--bg-color);
+  transition: 0.3s ease-in;
+}
+
+header .action .searchBx {
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 5px;
+}
+
+header .action .searchBx i {
+  font-size: 1.4em;
+  margin: 5px;
+  color: var(--frist-color);
+}
+
+header .action .searchBx input {
+  outline: none;
+  border: none;
+  font-size: 1em;
+  color: var(--light-color1);
+}
