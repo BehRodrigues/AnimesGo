@@ -97,6 +97,10 @@
 }
 
 @media (max-width: 420px) {
+  header {
+    padding: 30px 40px;
+  }
+
   .toggleMenu {
     position: relative;
     width: 30px;
